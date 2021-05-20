@@ -1,24 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Pane } from "evergreen-ui";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Pane width="100%" align="center">
+      <Pane backgroundColor="lightslategray" width="90%" paddingTop="15px" paddingBottom="15px">
+       
+        This is the pane dddd
+      </Pane>
+    </Pane>
   );
 }
 
