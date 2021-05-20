@@ -1,6 +1,5 @@
 import "./App.css";
-import { Pane } from "evergreen-ui";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import HomePage from './home.component';
 import PageHeader from "./page-header.component";
