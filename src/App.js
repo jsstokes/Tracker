@@ -1,14 +1,11 @@
 import "./App.css";
 import { Pane } from "evergreen-ui";
 
+import PageHeader from './page-header.component';
+
 function App() {
   return (
-    <Pane width="100%" align="center">
-      <Pane backgroundColor="lightslategray" width="90%" paddingTop="15px" paddingBottom="15px">
-       
-        This is the pane dddd
-      </Pane>
-    </Pane>
+    <PageHeader></PageHeader>
   );
 }
 
