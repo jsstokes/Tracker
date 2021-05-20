@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Pane } from "evergreen-ui";
+import { Link } from "react-router-dom";
 
 class PageHeader extends React.Component {
   constructor(props) {
@@ -18,20 +19,26 @@ class PageHeader extends React.Component {
         >
           <h1>Tracker</h1>
         </Pane>
-        <Pane width="90%" 
-          paddingTop="15px"
-          paddingBottom="15px"
-          align="left"
-        >
-            <Button borderRadius="10px" appearance="primary" onClick={this.testClick}>Home</Button>
+        <Pane width="90%" paddingTop="15px" paddingBottom="15px" align="left">
+          <Link to="/">
+            <Button
+              borderRadius="10px"
+              appearance="primary"
+              onClick={this.testClick}
+            >
+              Home
+            </Button>
+          </Link>
+          <Link to="/accounts">
             <Button borderRadius="10px">Accounts</Button>
+          </Link>
         </Pane>
       </Pane>
     );
   }
 
   testClick(event) {
-      console.log("Test Click Fired");
+    console.log("Test Click Fired");
   }
 }
 export default PageHeader;
