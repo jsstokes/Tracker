@@ -10,12 +10,12 @@ class PageHeader extends React.Component {
 
   render() {
     return (
-      <Pane width="100%" align="center">
+      <Pane align="center">
         <Pane
           backgroundColor="lightslategray"
-          width="90%"
           paddingTop="15px"
           paddingBottom="15px"
+          width="90%"
         >
           <h1>Tracker</h1>
         </Pane>

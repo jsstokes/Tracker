@@ -1,4 +1,5 @@
 import React from 'react';
+import { Pane } from 'evergreen-ui';
 
 export default class HomePage extends React.Component {
     constructor(props) {
@@ -8,7 +9,9 @@ export default class HomePage extends React.Component {
 
     render(props) {
         return(
-            <h2>Home Page Here</h2>
+            <Pane align="left" >
+                Home Page Here
+            </Pane>
         );
     }
 }
